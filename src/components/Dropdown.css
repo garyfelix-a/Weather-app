@@ -1,0 +1,7 @@
+select{
+    border: transparent;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
