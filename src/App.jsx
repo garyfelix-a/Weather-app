@@ -5,7 +5,7 @@ import DropDown from "./components/DropDown";
 import cities from "./constants/cities.js";
 
 const api = {
-  key: "9f8ee2b53d03151f14821b844bdb4d37",
+  key: import.meta.env.VITE_API_KEY,
   base: "https://api.openweathermap.org/data/2.5/",
 };
 
