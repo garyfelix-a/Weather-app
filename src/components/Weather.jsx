@@ -123,7 +123,7 @@ const Weather = () => {
                       <h2>
                       <span>Hum : </span>
                         {weather.main.humidity}
-                        <span>°</span>
+                        <span>%</span>
                       </h2>
                     </div>
                   </div>
