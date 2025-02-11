@@ -6,14 +6,22 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+const api = {
+  key: import.meta.env.VITE_API_KEY_FIREBASE,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appid: import.meta.env.APPID,
+  measurementId: import.meta.env.VITE_MEASUREMENTID,
+}
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCF3VXo26FvR57fA-Mg5ciq5l9X49J95HY",
+  apiKey: api.key,
   authDomain: "weather-app-af5a9.firebaseapp.com",
   projectId: "weather-app-af5a9",
   storageBucket: "weather-app-af5a9.firebasestorage.app",
-  messagingSenderId: "116666072280",
-  appId: "1:116666072280:web:239cf0ce52227fd160ebad",
-  measurementId: "G-34XHV6ELQ6"
+  messagingSenderId: api.messagingSenderId,
+  appId: api.appid,
+  measurementId: api.measurementId,
 };
 
 // Initialize Firebase
